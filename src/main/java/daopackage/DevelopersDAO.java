@@ -35,20 +35,28 @@ public class DevelopersDAO {
         }
     }
 
+    ArrayList<Developer> arrayList = new ArrayList<>();
+
     /**
      * this void method what can show all information from database (file.txt)
      */
+    boolean b = false;
+    public boolean getB(){
+        return b;
+    }
     public void getAll() {
         try (FileReader fr = new FileReader(file.getAbsoluteFile())) {
             int c;
             while ((c = fr.read()) != -1) {
                 System.out.print((char) c);
             }
+            b = true;
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         System.out.println();
     }
 
@@ -84,8 +92,13 @@ public class DevelopersDAO {
     /**
      * Method for delete file of information
      */
+    boolean fileChack;
+    public boolean getFileChack(){
+        return fileChack;
+    }
     public void delete() {
         file.delete();
+        fileChack = true;
     }
 
 
