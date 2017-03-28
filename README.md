@@ -4,6 +4,6 @@ Thats application for some IT-company. Can be used for registry and save all a l
 
 CI 
 
-SEE https://travis-ci.org/Forester19/MVCappIOModule
+SEE https://travis-ci.org/Forester19/MVCappIOModule.svg?branch=master
 
 Author VladisDevApps/
